@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<objects>
+<!-- ('', 'zport', 'dmd', 'Devices', 'NetScaler') -->
+<object id='/zport/dmd/Devices/NetScaler' module='Products.ZenModel.DeviceClass' class='DeviceClass'>
+<property visible="True" type="lines" id="zCollectorPlugins" >
+[]
+</property>
+<property visible="True" type="lines" id="zDeviceTemplates" >
+[]
+</property>
+<property visible="True" type="string" id="zPythonClass" >
+ZenPacks.community.Netscaler.NetScalerDevice
+</property>
+</object>
+</objects>
