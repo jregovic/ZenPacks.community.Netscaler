@@ -33,3 +33,9 @@ class LbVServerInfo(ComponentInfo):
         state = ProxyProperty('state')
         vipType = ProxyProperty('vipType')
 
+	def status(self):
+		if self.state == 'DOWN':
+			return 'Down'
+		else:
+			return 'Up'
+

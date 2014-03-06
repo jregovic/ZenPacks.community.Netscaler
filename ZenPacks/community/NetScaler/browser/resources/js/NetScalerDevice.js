@@ -26,7 +26,8 @@ ZC.NetScalerLbvServerPanel = Ext.extend(ZC.ComponentGridPanel, {
                 {name: 'monitored'},
                 {name: 'locking'},
                 {name: 'primaryipaddress'},
-                {name: 'vipType'}
+                {name: 'vipType'},
+		{name: 'state'}
             ],
             columns: [{
                 id: 'severity',
@@ -53,6 +54,12 @@ ZC.NetScalerLbvServerPanel = Ext.extend(ZC.ComponentGridPanel, {
                 sortable: true,
                 width: 120
             },{
+		id: 'state',
+		dataIndex: 'state',
+		header: _t('State'),
+		sortable: true,
+                width: 120
+	    },{
                 id: 'monitored',
                 dataIndex: 'monitored',
                 header: _t('Monitored'),
